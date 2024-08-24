@@ -1,0 +1,29 @@
+#include <iostream>
+#include<string>
+using namespace std;
+class  student{
+    string name;
+    string course;
+    int rollno;
+    public:
+    // string n;
+    // string  c;
+    // int r;
+    void setdata(string  n,string c,int r){
+        name=n;
+        course=c;
+        rollno=r;
+    }
+    void getdata(){
+        cout<<"name of the student is :"<<name << endl;
+        cout<<"course is :"<< course<<endl;
+        cout<<"roll no is :"<< rollno<<endl;
+    }
+    
+};
+int main() {
+   student s;
+   s.setdata("aditya","btech",26);
+   s.getdata();
+    return 0;
+}
