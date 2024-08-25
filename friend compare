@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+class XYZ;
+class ABC{
+    int d;
+    public:
+    void setdata(int e){
+        d=e;
+    }
+    friend void max(XYZ ,ABC );
+    };
+    class XYZ{
+        int w;
+        public:
+        void setdata(int e){
+            w=e;
+        }
+        friend void max(XYZ ,ABC );
+    };
+    void max(XYZ k,ABC m){
+        if(m.d >= k.w){
+           cout<<m.d;
+        }
+        else{
+            cout<<k.w;
+        }
+    }
+    
+int main() {
+    XYZ xyz;
+    xyz.setdata(90);
+    ABC abc;
+    
+    abc.setdata(40);
+     max(xyz,abc);
+
+    return 0;
+}
