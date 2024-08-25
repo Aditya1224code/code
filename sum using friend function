@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+class XYZ;
+class ABC{
+    int a,b;
+    public:
+    void setvalue(int d , int e){
+        a=d;
+        b=e;
+    }
+    friend void sum(XYZ,ABC);
+};
+class XYZ{
+    int x,y;
+    public:
+    void setvalue(int d, int e){
+        x=d;
+        y=e;
+    }
+    friend void sum(XYZ,ABC);
+    };
+
+    void sum(XYZ xyz , ABC abc){
+       int x,y,sum;
+    x=xyz.x;
+    y=xyz.y;
+    sum=x+y;
+    cout<<sum;
+    
+    }
+    int main(){
+        XYZ xyz;
+        xyz.setvalue(20,30);
+         ABC abc;
+        abc.setvalue(30,20);
+        sum(xyz,abc);
+       
+        
+        
+    }
+    
+
+    
