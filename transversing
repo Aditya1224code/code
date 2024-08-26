@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,a[20],loc,ele;
+  printf("enter the no.of elements ");
+  scanf("%d",&n);
+  for(i=0;i<n;i++){
+      scanf("%d",&a[i]);
+  }
+  printf("new array is");
+  for(i=0;i<n;i++){
+      printf("%d ",a[i]);
+  }
+return 0;
