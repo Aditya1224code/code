@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+class employee{
+    int id;
+   static int count;
+   public:
+    void setvalue(void){
+        
+        cout<<"id of the employee is:";
+        cin>>id;
+        count++;
+}
+void getvalue(void){
+    cout<<"the id of the employee is :"<<id;
+    cout<<"and employee no. is :"<<count<<endl;
+    
+    
+}
+static void getcount(void){   
+    cout<<"count is "<<count<<endl;
+}
+// static function 
+
+};
+int employee::count=567 ;
+// static data member
+
+int main() {
+  employee aditya;
+  employee aayush;
+  employee shivam;
+  aditya.setvalue();
+  aditya.getvalue();
+  employee::getcount();
+ aayush .setvalue();
+ aayush  .getvalue();
+ employee::getcount();
+ shivam .setvalue(); 
+ shivam .getvalue();
+
+    return 0;
+}
