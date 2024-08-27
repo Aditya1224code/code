@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+class xyz;
+class  abc{
+    int a;
+    int b;
+    public:
+    void setvalue(int d,int e){
+        a=d;
+        b=e;
+        cout<<a<<"+"<< b<<"i"<<endl;
+    }
+    friend  void complexsum(xyz,abc);
+    
+};
+class xyz{
+    int x; 
+    int y;
+    public:
+    void setvalue(int u,int v ){
+        x=u;
+        y=v;
+        cout<<x<<"+"<<y<<"i"<<endl;
+    }
+    friend void complexsum(xyz,abc);
+};
+void complexsum(xyz t,abc i ){
+    int realpart =(t.x+i.a);
+    int imaginarypart=(t.y+i.b);
+    cout<<"the sum of complex is "<<realpart<<" +  "<<imaginarypart<<"i" <<endl;
+
+}
+int main() {
+    int t,i,l;
+  abc h;
+   h.setvalue(3,4);
+xyz k;
+k.setvalue(5,6);
+complexsum(k,h);
+    return 0;
+}
