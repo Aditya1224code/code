@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int i,n,size,top,value;
+    printf("enter the size of array\n");
+    scanf("%d",&size);
+    printf("enter the no. of element");
+    scanf("%d",&n);
+    int a[size];
+    top=n;
+    if(top>size){
+        printf("overflow");
+    }
+    else{
+        for(i=0;i<n;i++){
+            scanf("%d",&a[i]);
+        }
+        for(i=0;i<n;i++){
+            printf("%d",a[i]);
+        }
+    }
+    printf("enter the element ");
+    scanf("%d",&value);
+    top=n-1;
+    top=top+1;
+    a[top]=value;
+    for(i=0;i<=top;i++){
+        printf("%d",a[i]);
+    }
+    return 0;
+}
