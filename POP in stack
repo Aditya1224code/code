@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+  
+    int i,n,top,value,k,yes;
+   printf("enter the size of array\n");
+   scanf("%d",&k);
+   int a[k];
+   printf("enter the no. of element you want to insert");
+   scanf("%d",&n);
+   top=n-1;
+ 
+      
+  for(i=0;i<n;i++){
+      scanf("%d",&a[i]);
+      
+  }
+    for(i=0;i<n;i++){
+        printf("%d",a[i]);
+    }  
+    
+  if(top==-1){
+      printf("sttack empty");
+  }
+else{
+    printf("\n");
+    top=top-1;
+    printf("new array is ");
+    for(i=0;i<=top;i++){
+    printf("%d",a[i]);
+}
+}
+
+    return 0;
+}
