@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class animal{
+    public:
+    void legs(){
+        cout<<"no. of legs of this animal is 4"<<endl;
+        
+    } 
+    
+};
+class cat:public animal{
+    public:
+    void jump(){
+        cout<<"cat:mouuuu"<<endl;
+    }
+};
+class dog :public cat{
+    public:
+    void talk(){
+        cout<<"dog: bhow"<<endl;
+    }
+};
+
+int main() {
+    dog d;
+    d.talk();
+    d.jump();
+    d.legs();
+
+    return 0;
+}
