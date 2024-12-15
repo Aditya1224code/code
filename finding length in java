@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("enter the new name");
+        Scanner s=new Scanner(System.in);
+        String text=s.nextLine();
+        System.out.println("entered text is "+ text);
+        text=text.replace(" ","-");
+        int length=text.length();
+         System.out.printf("length is:"+length);
+}
+}
