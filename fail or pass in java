@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("enter the marks of the subjects");
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the marks of the maths");
+    float a=sc.nextFloat();
+     System.out.println("enter the marks of the science");
+    float b=sc.nextFloat();
+     System.out.println("enter the marks of the hindi");
+    float c=sc.nextFloat();
+    float percentage=(a+b+c)/300*100;
+     System.out.println("the overall percentage of the student is "+ percentage);
+    
+        if(percentage>=40 && a>=33 && b>=33 && c>=33){
+             System.out.println("pass ");
+        }
+       
+        else{
+             System.out.println("you wonna work hard ");
+        }
+    }
+}
