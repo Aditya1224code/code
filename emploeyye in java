@@ -1,0 +1,36 @@
+import java .util.Scanner;
+class Main {
+    public static class Employee{
+        int salary;
+        String name;
+        
+        public void setsalary(int s ){
+             salary=s;
+            
+        }
+         public int getsalary(){
+           return salary;
+        }
+        public void setname(String n){
+            name =n;
+        
+        }
+        public String getname(){
+           // return name;
+            // System.out.println(name );
+              return name;
+        }
+    }
+    public static void main(String[] args) {
+    Employee a=new Employee();
+        Scanner s=new Scanner(System.in);
+         System.out.println("enter the name of the employe" );
+        String name=s.next();
+         System.out.println("enter the amount" );
+        int sA=s.nextInt();
+        a.setname(name);
+        a.setsalary(sA);
+        System.out.println("the name of the employee is  " + a.getname()+"  THE SALARY IS  "+ a.getsalary() );
+        
+    }
+}
