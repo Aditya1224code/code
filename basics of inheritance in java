@@ -1,0 +1,21 @@
+class Main {
+    static class animal{
+        void countlegs(){
+            System.out.println("animal have 4 legs ");
+        }
+        
+    }
+     static class dog extends animal{
+        void dogtalk(){
+            System.out.println ("dog bark at night with the sound of bhaw bhaw");
+        }
+    } 
+    public static void main(String[] args) {
+dog d=new dog();
+animal a=new animal();
+a.countlegs();
+// a.dogtalk();// does give an error because if we call the dderive class with the help of base class it cannot be called because it only consists the content of base class while in derive class it contain the content of both classes base and derived ;
+d.dogtalk();
+d.countlegs();
+    }
+}
