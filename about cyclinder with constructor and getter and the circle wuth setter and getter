@@ -1,0 +1,50 @@
+class Main {
+    static class circle{
+        private int radius;
+        
+    void setvalue(int r ){radius =r;}
+    float getvalue(){return radius;}
+    float calculatearea(){float area=2*3.14f*radius*radius;
+        return area;
+    }
+    
+    }
+    static class cyclinder{
+        private int radius;
+        private int height;
+         
+         void setvalue(int r ,int h){
+             radius=r;
+             height=h;
+         }
+         String getvalue(){
+             
+         
+        return "Radius: " + radius + ", Height: " + height;
+}
+float calarea(){
+    float area=2*3.14f*height*radius;
+    return area;
+}
+//constructor making so no need of setter
+public cyclinder(int r,int h){
+    radius=r;
+    height=h;
+    
+}
+    }
+
+
+    public static void main(String[] args) {
+        circle c=new circle();
+        c.setvalue(5);
+        System.out.println("the radius of circle is " + c.getvalue());
+         System.out.println("the area of circle is " + c.calculatearea());
+    
+    cyclinder cc=  new cyclinder(2,3);//constructor callled as radius 2and height 3
+    
+    System.out.println("the radius and height of cyclinder is   " + cc.getvalue());
+    System.out.println("the area of cyclinder with radius and height of cyclinder is   " + cc.calarea());
+    }
+    
+}
